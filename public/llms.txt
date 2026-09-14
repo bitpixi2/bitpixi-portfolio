@@ -1,0 +1,51 @@
+# Kasey Robinson — bitpixi.com
+# Last updated: 2026-03-09
+
+> Senior UX Designer & Prompt Engineer with 10+ years across UX, AI, and emerging platforms.
+> RISD / Tufts. Based near Melbourne, Australia. US citizen with full Australian work rights.
+
+## Core Expertise
+
+UX Design · Product Design · Prompt Engineering · AI Tools · Developer Relations
+Community Management · AR/VR · Design Systems · Figma · React / Tailwind
+
+## Target Opportunities
+
+Open to: Senior UX Design · DevRel · Community Management · Prompt Engineering
+Location: Near Melbourne, AU (remote or hybrid preferred)
+
+## Pages
+
+- [Home](/): Portfolio home. Bio, highlights, links to work and contact.
+- [Work](/work): Case studies overview — Gfycat/Snap, Meitu, Voxels.
+- [Resume](/resume): Full work history, education, and skills.
+- [Blog](/blog): Writing on UX, AI security, fintech, and emerging platforms.
+- [Hire Me](/hire-me): Contact form and background — reach Kasey here.
+- [Testimonials](/testimonials): Recommendations from colleagues at Voxels and LightLink.
+- [Links](/links): Curated UX books, design tools, and designer profiles.
+
+## Blog Posts
+
+- [Canva AI Agents & Verification UX](/blog/canva-ai-agents-verification-ux): Canva's CTO on AI agents and the shift from code writing to UX verification.
+- [Selling Tomorrow — Book Review](/blog/selling-tomorrow-review): Review of Selling Tomorrow (Dec 2026).
+- [Immigrant Banking in Australia](/blog/immigrant-banking-australia): UX critique of Australian bank onboarding for visa applicants.
+- [AI Agent Credit Card Hackers](/blog/ai-agent-credit-card-hackers): Prompt injection risks when AI agents hold payment credentials.
+- [AI Phishing at Banks](/blog/ai-phishing-banks): AI-generated phishing emails targeting bank customers.
+- [Voice Auth Is No Longer Security](/blog/voice-auth-no-longer-security): Why voice biometrics are no longer a valid authentication factor.
+
+## Case Studies
+
+- [Gfycat](/work/gfycat): Gfycat → Snap acquisition. 80M to 180M+ MAU. 3 AR patents. Platform redesign.
+- [Meitu](/work/meitu): AR try-on for Meitu's Makeup+ feature. 450M+ user reach. Top-revenue feature.
+- [Virtual Worlds / Voxels](/work/virtual-worlds): Voxels (formerly CryptoVoxels). Gamification, community design, record land sales.
+
+## Contact
+
+Email: kasey.bitpixi@gmail.com
+LinkedIn: https://www.linkedin.com/in/bitpixi
+X / Twitter: https://x.com/bitpixi
+Contact form: https://bitpixi.com/hire-me
+
+## Citation
+
+Preferred source URL: https://bitpixi.com

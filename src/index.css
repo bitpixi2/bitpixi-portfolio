@@ -1,0 +1,298 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Monochromatic palette */
+    --background: 0 0% 100%;
+    --foreground: 0 0% 4%;
+    
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 4%;
+    --card-hover: 0 0% 98%;
+    
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 4%;
+    
+    --primary: 0 0% 0%;
+    --primary-foreground: 0 0% 100%;
+    
+    --secondary: 0 0% 96%;
+    --secondary-foreground: 0 0% 4%;
+    
+    --muted: 0 0% 96%;
+    --muted-foreground: 0 0% 42%;
+    
+    --accent: 0 0% 96%;
+    --accent-foreground: 0 0% 4%;
+    
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    
+    --border: 0 0% 88%;
+    --border-strong: 0 0% 0%;
+    --input: 0 0% 88%;
+    --ring: 0 0% 4%;
+    
+    --radius: 0rem;
+    
+    /* Typography */
+    --font-serif: 'Cormorant Garamond', Georgia, serif;
+    --font-sans: 'Karla', system-ui, sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+    
+    /* Spacing */
+    --section-gap: 120px;
+    --content-max: 1000px;
+  }
+
+  .dark {
+    --background: 0 0% 10%;
+    --foreground: 0 0% 92%;
+    --card: 0 0% 10%;
+    --card-foreground: 0 0% 92%;
+    --card-hover: 0 0% 14%;
+    --popover: 0 0% 10%;
+    --popover-foreground: 0 0% 92%;
+    --primary: 0 0% 92%;
+    --primary-foreground: 0 0% 10%;
+    --secondary: 0 0% 16%;
+    --secondary-foreground: 0 0% 92%;
+    --muted: 0 0% 16%;
+    --muted-foreground: 0 0% 58%;
+    --accent: 0 0% 16%;
+    --accent-foreground: 0 0% 92%;
+    --border: 0 0% 20%;
+    --border-strong: 0 0% 92%;
+    --input: 0 0% 20%;
+    --ring: 0 0% 72%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: var(--font-sans);
+  }
+
+  h1, h2, h3, h4 {
+    font-family: var(--font-serif);
+  }
+}
+
+@layer components {
+  /* Section label - small uppercase mono */
+  .section-label {
+    @apply text-[11px] uppercase tracking-[0.15em] text-muted-foreground;
+    font-family: var(--font-mono);
+  }
+
+  /* Large editorial headline */
+  .headline-display {
+    font-family: var(--font-serif);
+    @apply text-4xl md:text-5xl lg:text-[56px] font-light leading-[1.1] tracking-[-0.02em] text-foreground;
+  }
+
+  /* Section headline */
+  .headline-section {
+    font-family: var(--font-serif);
+    @apply text-3xl md:text-4xl font-light text-foreground;
+  }
+
+  /* Subheadline */
+  .headline-sub {
+    font-family: var(--font-serif);
+    @apply text-2xl font-semibold text-foreground;
+  }
+
+  /* Body text */
+  .body-text {
+    font-family: var(--font-sans);
+    @apply text-base leading-[1.8] text-foreground;
+  }
+
+  /* Secondary text */
+  .body-secondary {
+    font-family: var(--font-sans);
+    @apply text-sm text-muted-foreground;
+  }
+
+  /* Mono label */
+  .mono-label {
+    font-family: var(--font-mono);
+    @apply text-[11px] uppercase tracking-[0.15em] text-muted-foreground;
+  }
+
+  /* Mono date */
+  .mono-date {
+    font-family: var(--font-mono);
+    @apply text-xs text-muted-foreground;
+  }
+
+  /* Link with underline animation */
+  .link-animated {
+    @apply relative inline-block text-foreground font-medium;
+  }
+
+  .link-animated::after {
+    content: '';
+    @apply absolute bottom-0 left-0 w-full h-px bg-foreground origin-left scale-x-0 transition-transform duration-300 ease-out;
+  }
+
+  .link-animated:hover::after {
+    @apply scale-x-100;
+  }
+
+  /* Nav link */
+  .nav-link {
+    font-family: var(--font-sans);
+    @apply text-[11px] uppercase tracking-[0.15em] font-medium text-foreground relative;
+  }
+
+  .nav-link::after {
+    content: '';
+    @apply absolute -bottom-1 left-0 w-full h-px bg-foreground origin-left scale-x-0 transition-transform duration-300 ease-out;
+  }
+
+  .nav-link:hover::after {
+    @apply scale-x-100;
+  }
+
+  /* Work card */
+  .work-card {
+    @apply border-b border-border pb-8 transition-all duration-300 ease-out;
+  }
+
+  .work-card:hover {
+    @apply bg-card-hover -mx-6 px-6;
+    transform: translateY(-2px);
+  }
+
+  /* Resume entry with left line */
+  .resume-entry {
+    @apply border-l-2 border-foreground pl-6 py-2;
+  }
+
+  /* Skill group */
+  .skill-group {
+    @apply border-l-2 border-foreground pl-6 py-2;
+  }
+
+  /* Photo grayscale effect */
+  .photo-grayscale {
+    @apply grayscale;
+    transition: all 600ms ease-out;
+  }
+
+  .photo-grayscale:hover {
+    @apply grayscale-0;
+    transform: scale(1.02);
+  }
+
+  /* Fade in animation */
+  .fade-in-up {
+    animation: fadeInUp 0.6s ease-out forwards;
+    opacity: 0;
+  }
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Stagger animation delays */
+  .delay-100 { animation-delay: 100ms; }
+  .delay-200 { animation-delay: 200ms; }
+  .delay-300 { animation-delay: 300ms; }
+  .delay-400 { animation-delay: 400ms; }
+  .delay-500 { animation-delay: 500ms; }
+}
+
+/* Star merge/pop animations */
+@keyframes starMergeIn {
+  0% { transform: scale(0.1) rotate(-180deg); opacity: 0; filter: blur(8px); }
+  50% { transform: scale(1.15) rotate(10deg); opacity: 1; filter: blur(0px); }
+  70% { transform: scale(0.92) rotate(-5deg); }
+  100% { transform: scale(1) rotate(0deg); }
+}
+
+@keyframes starPopIn {
+  0% { transform: scale(0) rotate(90deg); opacity: 0; }
+  40% { transform: scale(1.3) rotate(-15deg); opacity: 1; }
+  60% { transform: scale(0.85) rotate(8deg); }
+  80% { transform: scale(1.08) rotate(-3deg); }
+  100% { transform: scale(1) rotate(0deg); }
+}
+
+
+/* Subtle zoom on hover (no grayscale) */
+.photo-subtle-zoom {
+  transition: transform 600ms ease-out;
+}
+.photo-subtle-zoom:hover {
+  transform: scale(1.02);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: hsl(var(--background));
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(var(--muted-foreground) / 0.4);
+  border: 2px solid hsl(var(--background));
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(var(--muted-foreground) / 0.6);
+}
+
+::-webkit-scrollbar-corner {
+  background: hsl(var(--background));
+}
+
+/* Firefox scrollbar */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: hsl(var(--muted-foreground) / 0.4) hsl(var(--background));
+}
+
+/* Twinkling star animation */
+@keyframes twinkle {
+  0%, 100% { opacity: 0; }
+  50% { opacity: 1; }
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+@keyframes panLeftRight {
+  0%, 100% { transform: translateX(0%); }
+  50% { transform: translateX(-15%); }
+}
+
+.animate-pan-left-right {
+  animation: panLeftRight 15s ease-in-out infinite;
+}

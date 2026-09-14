@@ -1,0 +1,7 @@
+project_id = "icewbteujdygtfiaujut"
+
+[functions.upload-star-art]
+verify_jwt = false
+
+[functions.cleanup-star-art]
+verify_jwt = false
