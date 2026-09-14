@@ -2,8 +2,8 @@
 
 Kasey Robinson's portfolio, exported from the current Lovable Portfolio project
 on 14 September 2026. The source, design, writing, images, and downloadable CV
-are maintained here. The build is ready for GitHub Pages at <https://bitpixi.com>.
-The domain remains on Lovable until GitHub Pages hosting is enabled.
+are maintained here. GitHub Pages hosts the portfolio at <https://bitpixi.com>,
+with HTTPS enforced and `www.bitpixi.com` redirecting to the main address.
 
 ## Local development
 
@@ -33,8 +33,9 @@ Actions tab. The workflow builds the site and deploys only `dist/` to GitHub Pag
 Repository Settings → Pages must use
 GitHub Actions with the custom domain `bitpixi.com` and HTTPS enforced.
 
-DNS is managed by Vercel. For the cutover, the apex domain needs GitHub Pages'
-four A records and `www` needs a CNAME to `bitpixi2.github.io`.
+DNS is managed by Vercel. The apex domain uses GitHub Pages' A records
+`185.199.108.153`, `185.199.109.153`, `185.199.110.153`, and `185.199.111.153`.
+The `www` hostname is a CNAME to `bitpixi2.github.io`.
 
 ## External services
 
