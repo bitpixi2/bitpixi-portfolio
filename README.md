@@ -28,8 +28,8 @@ from `src/data/blogPosts.ts` automatically.
 
 ## Deployment
 
-Run `.github/workflows/pages.yml` from the Actions tab after hosting is enabled.
-The workflow builds the site and deploys only `dist/` to GitHub Pages.
+Push to `main` to run `.github/workflows/pages.yml`, or run it manually from the
+Actions tab. The workflow builds the site and deploys only `dist/` to GitHub Pages.
 Repository Settings → Pages must use
 GitHub Actions with the custom domain `bitpixi.com` and HTTPS enforced.
 
