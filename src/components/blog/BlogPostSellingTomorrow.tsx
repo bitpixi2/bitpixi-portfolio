@@ -47,7 +47,7 @@ export default function BlogPostSellingTomorrow() {
           <h2 className="font-serif text-xl font-semibold mt-10 mb-4">Where It Shines</h2>
 
           <p>
-            Where <em><a href="https://sellingtomorrow.lovable.app/" target="_blank" rel="noopener noreferrer" className="underline underline-offset-4 hover:text-primary transition-colors">Selling Tomorrow</a></em> truly shines is in its treatment of prediction as a form of power. The "Seer Purists," extremists who oppose commercialized futures, aren't simply villains. Their arguments about free will, about the violence of making human choice into a tradeable asset, are given real intellectual weight even as their methods are condemned. The novel doesn't offer easy answers about whether seeing the future changes it, or whether populations given behavioral predictions act more freely or less. It just keeps turning the question over, examining each facet.
+            Where <em><a href="https://selling-tomorrow.bitpixi.com/" target="_blank" rel="noopener noreferrer" className="underline underline-offset-4 hover:text-primary transition-colors">Selling Tomorrow</a></em> truly shines is in its treatment of prediction as a form of power. The "Seer Purists," extremists who oppose commercialized futures, aren't simply villains. Their arguments about free will, about the violence of making human choice into a tradeable asset, are given real intellectual weight even as their methods are condemned. The novel doesn't offer easy answers about whether seeing the future changes it, or whether populations given behavioral predictions act more freely or less. It just keeps turning the question over, examining each facet.
           </p>
 
           <p>
@@ -73,7 +73,7 @@ export default function BlogPostSellingTomorrow() {
           <div className="border border-border p-6 mt-10">
             <p className="text-sm text-muted-foreground font-mono uppercase tracking-widest mb-2">Get the Book</p>
             <p className="text-foreground mb-4">
-              <a href="https://sellingtomorrow.lovable.app/" target="_blank" rel="noopener noreferrer" className="underline underline-offset-4 hover:text-primary transition-colors">
+              <a href="https://selling-tomorrow.bitpixi.com/" target="_blank" rel="noopener noreferrer" className="underline underline-offset-4 hover:text-primary transition-colors">
                 Selling Tomorrow
               </a>{' '}
               is being launched by December 2026 in limited hardcover, softcover, and digital editions. The first of a trilogy.

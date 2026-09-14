@@ -69,7 +69,7 @@ const sideProjects = [
     title: 'Selling Tomorrow',
     subtitle: 'Young Adult Fiction',
     tagline: "My first novel 'Selling Tomorrow', emerged from fascination with how experiences and memories become valued in marketplaces.",
-    link: 'https://sellingtomorrow.lovable.app',
+    link: 'https://selling-tomorrow.bitpixi.com',
     image: sellingTomorrowCover,
     objectPosition: 'center 60%',
   },
